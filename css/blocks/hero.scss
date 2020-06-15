@@ -1,5 +1,5 @@
 .hero {
-  background: url("../../images/pattern.png") right bottom no-repeat;
+  background: url("../images/pattern.png") right bottom no-repeat;
   background-color: #61C4D9;
   height: 100vh;
   min-height: 650px;
@@ -8,14 +8,14 @@
   position: relative;
 
   &::before {
-    content: url("../../images/left-leaf.png");
+    content: url("../images/left-leaf.png");
     position: absolute;
     bottom: -60px;
     left: 2%;
   }
 
   &::after {
-    content: url("../../images/berries-and-leafs.png");
+    content: url("../images/berries-and-leafs.png");
     position: absolute;
     bottom: -55px;
     right: 0;
@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    background:  url("../../images/bars.png") right center / 50% auto no-repeat;
+    background:  url("../images/bars.png") right center / 50% auto no-repeat;
   }
 
   &__title-section {
