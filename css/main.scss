@@ -1,0 +1,34 @@
+$colw: #fff;
+$colb: #000;
+$darkGreen: #365a49;
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//z-indexes
+$z-fixed-menu: 100;
+
+//normalize
+@import url("./layout/normalize.css");
+
+//setups
+@import url("./layout/fonts.css");
+@import "./layout/base.scss";
+
+//blocks
+@import "./blocks/hero.scss";
+@import "./blocks/header.scss";
+@import "./blocks/features.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/section.scss";
+@import "./blocks/headline.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/benefit.scss";
+@import "./blocks/benefits-section.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/reviews-section.scss";
+@import "./blocks/interactive-avatar.scss";
+@import "./blocks/order-section.scss";
+@import "./blocks/form.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/fixed-menu.scss";
