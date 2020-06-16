@@ -7,35 +7,35 @@
   line-height: 1;
   display: inline-block;
   border: none;
+}
 
-  &--theme--white {
-    background: $colw;
-    color: $darkGreen;
-    
-    &:hover {
-      color: $colw;
-      background: $darkGreen;
-    }
-  }
-
-  &--theme--green {
-    background: $darkGreen;
+.btn--theme--white {
+  background: $colw;
+  color: $darkGreen;
+  
+  &:hover {
     color: $colw;
-    
-    &:hover {
-      color: $darkGreen;
-      background: $colw;
-    }
+    background: $darkGreen;
   }
+}
 
-  &--theme--transparent {
-    color: $colb;
-    background: transparent;
-    text-transform:none;
-    font-weight: 400;
+.btn--theme--green {
+  background: $darkGreen;
+  color: $colw;
+  
+  &:hover {
+    color: $darkGreen;
+    background: $colw;
+  }
+}
 
-    &:hover {
-      color: $darkGreen;
-    }
+.btn--theme--transparent {
+  color: $colb;
+  background: transparent;
+  text-transform:none;
+  font-weight: 400;
+
+  &:hover {
+    color: $darkGreen;
   }
 }

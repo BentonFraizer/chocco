@@ -4,18 +4,16 @@
   justify-content: space-between;
 }
 
-.menu {
-  &__list {
-    display: flex;
-    align-items: center;
-  }
+.menu__list {
+  display: flex;
+  align-items: center;
+}
 
-  &__item {
-    margin-right: 27px;
-    
-    &:last-child {
-      margin-right: 0;
-    }
+.menu__item {
+  margin-right: 27px;
+  
+  &:last-child {
+    margin-right: 0;
   }
 }
 

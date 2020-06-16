@@ -1,11 +1,12 @@
 .headline {
   text-align: center;
-  &__title {
-    margin-bottom: 0;
-  }
+}
 
-  &__subtitle {
-    padding: 0 26%;
-    margin-bottom: 48px;
-  }
+.headline__title {
+  margin-bottom: 0;
+}
+
+.headline__subtitle {
+  padding: 0 26%;
+  margin-bottom: 48px;
 }

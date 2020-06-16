@@ -1,8 +1,6 @@
 .benefits-section {
   position: relative;
   background: url("../images/side-leaf.png") left top 57% no-repeat;
-  // временный цвет для визуального разделения секции
-  // background-color: lightskyblue;
 
   &:before {
     content: url("../images/raspberry.png");
