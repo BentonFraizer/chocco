@@ -1,0 +1,41 @@
+.btn {
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 35px;
+  border-radius: 30px;
+  line-height: 1;
+  display: inline-block;
+  border: none;
+}
+
+.btn--theme--white {
+  background: $colw;
+  color: $darkGreen;
+  
+  &:hover {
+    color: $colw;
+    background: $darkGreen;
+  }
+}
+
+.btn--theme--green {
+  background: $darkGreen;
+  color: $colw;
+  
+  &:hover {
+    color: $darkGreen;
+    background: $colw;
+  }
+}
+
+.btn--theme--transparent {
+  color: $colb;
+  background: transparent;
+  text-transform:none;
+  font-weight: 400;
+
+  &:hover {
+    color: $darkGreen;
+  }
+}

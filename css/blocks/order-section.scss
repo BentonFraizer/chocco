@@ -1,0 +1,18 @@
+.order-section {
+  background: url("../images/bgd-order.jpg") no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: url("../images/order-leaf.png");
+    position: absolute;
+    bottom: 100px;
+    right: 1%;
+  }
+
+  &::after {
+    content: url("../images/order-berry.png");
+    position: absolute;
+    bottom: 120px;
+    left: 1%;
+  }
+}

@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.form__block {
+  flex:1;
+  margin-right: 20px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.form__input {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  border: none;
+  padding: 18px 11px;
+  border: solid 3px transparent;
+
+  &:focus {
+    border-color: #dee2bd;
+    outline: none;
+  }
+}
+
+.form__input--textarea {
+  height: 180px;
+  resize: none;
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.form__controls + .form__controls {
+  margin-bottom: 40px;
+  margin-right: 0;
+}
+
+/* Убираю стрелочки которые характерны для input type="number"*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}

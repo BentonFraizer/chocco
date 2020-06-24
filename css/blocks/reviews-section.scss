@@ -1,0 +1,11 @@
+.reviews-section {
+  position: relative;
+  background: url("../images/rev-right-berryes.png") right 2% top 20px no-repeat;
+
+  &:before {
+    content: url("../images/rev-left-leaf.png");
+    position: absolute;
+    bottom: -160px;
+    left: 0;
+  }
+}
