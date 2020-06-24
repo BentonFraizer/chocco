@@ -50,12 +50,15 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 7px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
-.form__btns {
-  margin-top: 38px;
+.form__controls + .form__controls {
+  margin-bottom: 40px;
+  margin-right: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* Убираю стрелочки которые характерны для input type="number"*/
+    -webkit-appearance: none;
 }
