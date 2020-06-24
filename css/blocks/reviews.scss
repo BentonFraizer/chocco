@@ -72,10 +72,10 @@
   justify-content: center;
 }
 
-.reviews__content-item:nth-child(2) {
+.reviews__content-item {
   display: none;
 }
 
-.reviews__content-item:nth-child(3) {
-  display: none;
+.reviews__content-item--active {
+  display: flex;
 }
