@@ -3,6 +3,7 @@
 @import url("./layout/fonts.css");
 html, body {
   height: 100%;
+  font-size: 18px;
 }
 
 body {
@@ -83,19 +84,19 @@ footer {
   height: 100vh;
   min-height: 650px;
   color: #fff;
-  padding: 24px 0 45px;
+  padding: 1.33rem 0 2.67rem;
   position: relative;
 }
 .hero::before {
   content: url("../images/left-leaf.png");
   position: absolute;
-  bottom: -60px;
+  top: 95%;
   left: 2%;
 }
 .hero::after {
   content: url("../images/berries-and-leafs.png");
   position: absolute;
-  bottom: -55px;
+  top: 77%;
   right: 0;
 }
 
@@ -111,16 +112,16 @@ footer {
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: 2.67rem;
   line-height: 1.22;
   font-weight: 700;
-  margin-bottom: 2px;
+  margin-bottom: 1%;
   text-transform: uppercase;
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 28px;
+  font-size: 1.17rem;
+  margin-bottom: 1.53rem;
   line-height: 1.3;
 }
 
@@ -133,9 +134,9 @@ footer {
 }
 
 .hero__col + .hero__col img {
-  min-width: 503px;
-  height: 523px;
-  margin-top: -108px;
+  min-width: 27.94rem;
+  height: 29.06rem;
+  margin-top: -14%;
 }
 
 .header {
@@ -147,25 +148,30 @@ footer {
 .menu__list {
   display: flex;
   align-items: center;
+  min-width: 35.3rem;
 }
 
 .menu__item {
-  margin-right: 27px;
+  margin-right: 4.2%;
 }
 .menu__item:last-child {
   margin-right: 0;
 }
 
 .phone-number {
-  font-size: 24px;
+  font-size: 1.33rem;
   display: flex;
   align-items: center;
+  min-width: 9rem;
 }
 
 .phone-number__icon-elem {
-  width: 12px;
-  height: 11px;
-  margin-right: 6px;
+  min-width: 0.67rem;
+  height: 0.67rem;
+}
+
+.phone-number__text {
+  margin-left: 2%;
 }
 
 .features {
@@ -173,7 +179,7 @@ footer {
 }
 
 .features__item {
-  margin-right: 46px;
+  margin-right: 5.7%;
 }
 .features__item:last-child {
   margin-right: 0;
@@ -184,20 +190,20 @@ footer {
 }
 
 .feature__text {
-  font-size: 16px;
-  max-width: 75px;
+  font-size: 0.89rem;
+  max-width: 4.17rem;
 }
 
 .feature__icon {
-  width: 45px;
-  margin-right: 7px;
+  min-width: 2.5rem;
+  margin-right: 6%;
 }
 
 .btn {
-  font-size: 19px;
+  font-size: 1.05rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 20px 35px;
+  padding: 1.11rem 1.94rem;
   border-radius: 30px;
   line-height: 1;
   display: inline-block;
@@ -248,10 +254,9 @@ footer {
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 2.67rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 37px;
   text-align: center;
 }
 
@@ -265,7 +270,7 @@ footer {
 
 .headline__subtitle {
   padding: 0 26%;
-  margin-bottom: 48px;
+  margin-bottom: 5%;
 }
 
 .benefits {
@@ -280,7 +285,7 @@ footer {
 .benefits__item::before {
   content: url("../images/separator.png");
   position: absolute;
-  top: 55px;
+  top: 20%;
   right: 0;
   transform: translateX(50%);
 }
@@ -300,8 +305,8 @@ footer {
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 7rem;
+  height: 7rem;
   position: relative;
   background-color: #f2f5f4;
   border-radius: 50%;
@@ -313,8 +318,8 @@ footer {
 }
 
 .benefit__icon {
-  width: 75px;
-  height: 69px;
+  width: 4.2rem;
+  height: 3.8rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -323,9 +328,9 @@ footer {
 
 .benefit__text h3 {
   color: #000;
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 0.66rem;
 }
 
 .benefit__text p {
@@ -339,7 +344,7 @@ footer {
 .benefits-section:before {
   content: url("../images/raspberry.png");
   position: absolute;
-  bottom: -70px;
+  top: 80.5%;
   left: 0;
 }
 
@@ -387,25 +392,25 @@ footer {
 
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
-  padding: 8px 0;
+  margin-left: 1.11rem;
+  padding: 0.44rem 0;
 }
 
 .reviews__title {
-  font-size: 30px;
+  font-size: 1.67rem;
   font-weight: 700;
   color: #000;
-  margin-bottom: 19px;
+  margin-bottom: 1.06rem;
 }
 
 .reviews__text {
   line-height: 1.23;
-  padding-right: 23%;
-  margin-bottom: 25px;
+  padding-right: 22%;
+  margin-bottom: 1.39rem;
 }
 
 .reviews__autor {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
   color: #000;
 }
@@ -425,18 +430,18 @@ footer {
 
 .reviews-section {
   position: relative;
-  background: url("../images/rev-right-berryes.png") right 2% top 20px no-repeat;
+  background: url("../images/rev-right-berryes.png") right 2% top 2% no-repeat;
 }
 .reviews-section:before {
   content: url("../images/rev-left-leaf.png");
   position: absolute;
-  bottom: -160px;
+  top: 87%;
   left: 0;
 }
 
 .interactive-avatar {
-  height: 80px;
-  width: 80px;
+  height: 4.44rem;
+  width: 4.44rem;
   border: 6px solid transparent;
   border-radius: 50%;
   overflow: hidden;
@@ -473,13 +478,13 @@ footer {
 .order-section::before {
   content: url("../images/order-leaf.png");
   position: absolute;
-  bottom: 100px;
+  bottom: 2%;
   right: 1%;
 }
 .order-section::after {
   content: url("../images/order-berry.png");
   position: absolute;
-  bottom: 120px;
+  bottom: 2%;
   left: 1%;
 }
 
@@ -489,7 +494,7 @@ footer {
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 2%;
 }
 .form__col:last-child {
   margin-right: 0;
@@ -497,12 +502,12 @@ footer {
 
 .form__row {
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: 3%;
 }
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 4.5%;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -510,11 +515,11 @@ footer {
 
 .form__input {
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
   width: 100%;
   border: none;
-  padding: 18px 11px;
+  padding: 1rem 0.6rem;
   border: solid 3px transparent;
 }
 .form__input:focus {
@@ -523,7 +528,7 @@ footer {
 }
 
 .form__input--textarea {
-  height: 180px;
+  height: 10rem;
   resize: none;
 }
 
@@ -531,11 +536,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 7px;
+  margin-bottom: 1%;
 }
 
 .form__controls + .form__controls {
-  margin-bottom: 40px;
+  margin-bottom: 9%;
   margin-right: 0;
 }
 
@@ -559,7 +564,7 @@ input[type=number]:focus {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
-  margin-right: 21px;
+  margin-right: 4.6%;
 }
 
 .radio--checkbox .radio__visible {
@@ -578,8 +583,8 @@ input[type=number]:focus {
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.44rem;
+  height: 1.44rem;
   position: relative;
   border-radius: 50%;
   background: #fff;
@@ -587,8 +592,8 @@ input[type=number]:focus {
 }
 .radio__visible:before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 0.78rem;
+  height: 0.78rem;
   background-color: #365a49;
   border-radius: 50%;
   position: absolute;
@@ -599,7 +604,7 @@ input[type=number]:focus {
 }
 
 .radio__title {
-  padding-top: 3px;
+  padding-top: 0.17rem;
 }
 
 .fixed-menu {
@@ -610,7 +615,7 @@ input[type=number]:focus {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 31%;
 }
 
 .fixed-menu__item--active .fixed-menu__link {
@@ -618,8 +623,8 @@ input[type=number]:focus {
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 0.89rem;
+  height: 0.89rem;
   border-radius: 50%;
   border: 1px solid transparent;
   display: block;
@@ -628,8 +633,8 @@ input[type=number]:focus {
 .fixed-menu__link::before {
   content: "";
   display: block;
-  height: 6px;
-  width: 6px;
+  height: 0.37rem;
+  width: 0.37rem;
   border-radius: 50%;
   background: #344acc;
   position: absolute;

@@ -4,7 +4,7 @@
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 2%;
 
   &:last-child {
     margin-right: 0;
@@ -13,12 +13,13 @@
 
 .form__row {
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: 3%;
 }
 
 .form__block {
   flex:1;
-  margin-right: 20px;
+  // margin-right: 20px;
+  margin-right: 4.5%;
 
   &:last-child{
     margin-right: 0;
@@ -27,11 +28,11 @@
 
 .form__input {
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
   width: 100%;
   border: none;
-  padding: 18px 11px;
+  padding: 1rem 0.6rem;
   border: solid 3px transparent;
 
   &:focus {
@@ -41,7 +42,7 @@
 }
 
 .form__input--textarea {
-  height: 180px;
+  height: 10rem;
   resize: none;
 }
 
@@ -49,11 +50,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 7px;
+  margin-bottom: 1%;
 }
 
 .form__controls + .form__controls {
-  margin-bottom: 40px;
+  margin-bottom: 9%;
   margin-right: 0;
 }
 

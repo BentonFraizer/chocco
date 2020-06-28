@@ -5,14 +5,14 @@
   &::before {
     content: url("../images/order-leaf.png");
     position: absolute;
-    bottom: 100px;
+    bottom: 2%;
     right: 1%;
   }
 
   &::after {
     content: url("../images/order-berry.png");
     position: absolute;
-    bottom: 120px;
+    bottom: 2%;
     left: 1%;
   }
 }
