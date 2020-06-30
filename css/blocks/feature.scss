@@ -3,12 +3,11 @@
 }
 
 .feature__text {
-  font-size: 0.89rem;
-  max-width: 4.17rem;
+  font-size: rem(16px);
+  max-width: rem(75px);
 }
 
 .feature__icon {
-  min-width: 2.5rem;
-  // margin-right: 7px;
+  min-width: rem(45px);
   margin-right: 6%;
 }

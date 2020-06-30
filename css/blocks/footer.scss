@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  min-height: rem(93px);
+  left: 0;
+  bottom: 0;
+  background-color: $colw;
+  padding: rem(17px) rem(141px) rem(10px) rem(79px);
+}
+
+address {
+  font-size: rem(21px);
+  font-style: normal;
+  font-weight: 400;
+
+  @include phones {
+    margin-bottom: 3%;
+  }
+}
+
+.footer .phone-number__text {
+  color: $darkGreen;
+  font-size: rem(21px);
+}
+
+.footer__container {
+  @include phones {
+    flex-direction: column;
+    padding: rem(24px) 0 rem(30px);
+    text-align: center;
+    min-height: rem(153px);
+  }
+}
+
+.footer__col:last-child {
+  @include phones {
+    margin-right: 13%;
+    margin-top: 1%;
+  }
+}

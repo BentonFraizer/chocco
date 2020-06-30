@@ -1,39 +1,64 @@
 .reviews__display {
   margin-bottom: 22px;
   background: #f8faf9;
-  padding: 50px 45px 34px;
+  padding: rem(50px) rem(45px) rem(34px);
   position: relative;
   overflow: hidden;
+
+  @include tablets {
+    padding: rem(57px) rem(20px) rem(21px);
+  }
 
   &::before {
     position: absolute;
     content: url("../images/rev-raspberry.png");
     right: 0;
     top: 0;
+    z-index: 0;
   }
 
   &::after {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: $colw;
     border-radius: 50%;
     position: absolute;
-    top: -65px;
+    top: -19%;
     transform: translateY(-50%);
     left: 50%;
     transform: translateX(-50%);
+
+    @include tablets {
+      top: -15%;
+    }
   }
 }
 
 .reviews__display-inner {
   display: flex;
+  
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: rem(254px);
+  height: rem(260px);
+
+  @include tablets {
+    width: rem(132px);
+    height: rem(132px);
+    margin-bottom: rem(24px);
+  }
+
+  @include phones {
+    z-index: 1;
+  }
 }
 
 .reviews__avatar-img {
@@ -44,25 +69,38 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 1.11rem;
-  padding: 0.44rem 0;
+  margin-left: 2%;
+  padding: rem(8px) 0;
+
+  @include tablets {
+    margin-left: 0;
+  }
 }
 
 .reviews__title {
-  font-size: 1.67rem;
+  font-size: rem(30px);
   font-weight: 700;
   color: $colb;
-  margin-bottom: 1.06rem;
+  margin-bottom: rem(19px);
+
+  @include tablets {
+    margin-bottom: rem(12px);
+  }
 }
 
 .reviews__text {
   line-height: 1.23;
-  padding-right: 22%;
-  margin-bottom: 1.39rem;
+  padding-right: rem(116px);
+  margin-bottom: 4.5%;
+  
+  @include tablets {
+    padding-right: 0;
+    margin-bottom: 2.5%;
+  }
 }
 
 .reviews__autor {
-  font-size: 1rem;
+  font-size: rem(18px);
   font-weight: 500;
   color: $colb;
 }
@@ -78,4 +116,10 @@
 
 .reviews__content-item--active {
   display: flex;
+}
+
+.reviews__main-title {
+  @include tablets {
+    margin-bottom: rem(25px);
+  }
 }

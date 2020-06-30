@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
   <title>CHOCCO</title>
   <link rel="stylesheet" href="./css/main.css">
@@ -27,12 +27,17 @@
                 <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
               </ul>
             </nav>
-              <a href="tel:+78009039090" class="phone-number">
-                <span class="phone-number__icon">
-                  <img src="./icons/phone.svg" class="phone-number__icon-elem" alt="phone icon">
-                </span>
-                <span class="phone-number__text">8 800 903 90 90</span>
-              </a>
+            <a href="tel:+78009039090" class="phone-number header__phone-number">
+              <span class="phone-number__icon">
+                <img src="./icons/phone.svg" class="phone-number__icon-elem" alt="phone icon">
+              </span>
+              <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+            <a href="#" class="hamburger">
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
+            </a>
           </header>
           <div class="hero__columns">
             <div class="hero__col">
@@ -43,7 +48,7 @@
               </div>
             </div>
             <div class="hero__col">
-              <img src="./images/bars.png" alt="bars">
+              <img src="./images/bars.png" alt="bars" class="hero__bars">
             </div>
           </div>
           <div class="hero__icons-section">
@@ -115,9 +120,11 @@
               </div>
               <div class="benefit__text">
                 <h3>Питательно</h3>
-                <p>
-                  Высокое содержание качественного белка, а также всех необходимых витаминов и минералов.
-                </p>
+                <div class="benefit__desc">
+                  <p>
+                    Высокое содержание качественного белка, а также всех необходимых витаминов и минералов.
+                  </p>
+              </div>
               </div>
             </li>
           </ul>
@@ -125,7 +132,7 @@
       </section>
       <section class="section reviews-section">
         <div class="container">
-          <h2 class="section__title">Отзывы</h2>
+          <h2 class="section__title reviews__main-title">Отзывы</h2>
           <div class="reviews">
             <ul class="reviews__content">
               <li class="reviews__content-item">
@@ -205,7 +212,7 @@
       </section>
       <section class="section order-section section--font--color--green">
         <div class="container">
-          <h2 class="section__title">Закажите доставку</h2>
+          <h2 class="section__title order__title">Закажите доставку</h2>
           <form class="form">
             <div class="form__col">
               <div class="form__row">
@@ -276,6 +283,38 @@
             </div>
           </form>
         </div>
+      </section>
+      <section class="section contacts-section">
+        <div class="contacts__map">
+          <img src="/images/map.jpg" alt="map">
+        </div>
+        <footer class="footer footer__container">
+          <div class="footer__col">
+            <address>Москва, ул.Новый Арбат, д.31/12</address>
+            <a href="tel:+78009039090" class="phone-number">
+              <span class="phone-number__icon">
+                <img src="./icons/phone_green.svg" class="phone-number__icon-elem" alt="phone icon">
+              </span>
+              <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+          </div>
+          <div class="footer__col">
+            <ul class="social">
+              <li class="social__item social__item_icon-vk">
+                <a href="#" class="social__link"></a>
+              </li>
+              <li class="social__item social__item_icon-facebook">
+                <a href="#" class="social__link"></a>
+              </li>
+              <li class="social__item social__item_icon-insta">
+                <a href="#" class="social__link"></a>
+              </li>
+              <li class="social__item social__item_icon-twitter">
+                <a href="#" class="social__link"></a>
+              </li>
+            </ul>
+          </div>
+        </footer>
       </section>
     </div>
   </div>

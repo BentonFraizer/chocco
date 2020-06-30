@@ -1,0 +1,20 @@
+.phone-number {
+  font-size: rem(24px);
+  display: flex;
+  align-items: center;
+  min-width: 9rem;
+
+  @include phones {
+    justify-content: center;
+  }
+}
+
+.phone-number__icon-elem {
+  width: rem(12px);
+  height: rem(12px);
+}
+
+.phone-number__text {
+  margin-left: 2%;
+  flex-wrap: nowrap;
+}

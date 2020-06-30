@@ -1,35 +1,11 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
-.menu__list {
-  display: flex;
-  align-items: center;
-  min-width: 35.3rem;
-}
-
-.menu__item {
-  margin-right: 4.2%;
-  
-  &:last-child {
-    margin-right: 0;
+.phone-number.header__phone-number {
+  @include tablets {
+    display: none;
   }
-}
-
-.phone-number {
-  font-size: 1.33rem;
-  display: flex;
-  align-items: center;
-  min-width: 9rem;
-}
-
-.phone-number__icon-elem {
-  min-width: 0.67rem;
-  height: 0.67rem;
-}
-
-.phone-number__text {
-  margin-left: 2%;
 }
