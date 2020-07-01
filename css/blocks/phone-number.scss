@@ -12,7 +12,13 @@
 .phone-number__icon-elem {
   width: rem(12px);
   height: rem(12px);
+  fill: #fff;
 }
+
+.footer .phone-number__icon-elem {
+  fill:  #365a49;  
+}
+
 
 .phone-number__text {
   margin-left: 2%;
