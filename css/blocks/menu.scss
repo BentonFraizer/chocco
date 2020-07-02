@@ -2,7 +2,8 @@
   margin: 0 30px;
   padding-top: rem(9px);
   flex: 1;
-  @include tablets{
+
+  @include tablets {
     display: none;
   }
 }
@@ -17,7 +18,13 @@
 .menu__item {
   margin-right: 4.2%;
   margin-bottom: 1%;
-  
+  transition: 0.2s;
+  opacity: .8;
+
+  &:hover {
+    opacity: 1;
+  }
+
   &:last-child {
     margin-right: 0;
   }

@@ -75,6 +75,10 @@
   @include tablets {
     margin-left: 0;
   }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .reviews__title {
@@ -85,6 +89,10 @@
 
   @include tablets {
     margin-bottom: rem(12px);
+  }
+  
+  @include phones {
+    font-size: rem(22px);
   }
 }
 
@@ -120,6 +128,11 @@
 
 .reviews__main-title {
   @include tablets {
-    margin-bottom: rem(25px);
+    margin-bottom: 3%;
+  }
+
+  @include phones {
+    margin-bottom: 3%;
+    font-size: rem(24px);
   }
 }

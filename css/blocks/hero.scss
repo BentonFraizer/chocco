@@ -14,6 +14,7 @@
   @include phones {
     background-position: right bottom 74%;
     background-size: 310px 380px;
+    min-height:0;
   }
 
   &::before {
@@ -35,7 +36,7 @@
     }
 
     @include phones {
-      top: 40%;
+      top: 45%;
       left: 8%;
     }
   }
@@ -59,7 +60,9 @@
 
     @include phones {
       top: 33%;
-      right: 0;
+      right: 5%;
+      width: rem(293px);
+      height: rem(217px);
     }
   }
 }
@@ -96,6 +99,12 @@
   @include tablets {
     z-index: 2;
   }
+
+  @include phones {
+    font-size: rem(24px);
+    line-height: 1;
+    margin-top: -5%;
+  }
 }
 
 .hero__title-desc {
@@ -109,8 +118,9 @@
   }
 
   @include phones {
-    padding: 0 15%;
-    margin-bottom: 4%;
+    padding: 0 5%;
+    font-size: rem(18px);
+    margin-bottom: 9%;
   }
 }
 
@@ -121,6 +131,10 @@
     flex: 1;
     flex-direction: column-reverse;
     justify-content: center;
+  }
+
+  @include phones {
+    margin-top: -5%;
   }
 }
 
@@ -160,5 +174,7 @@
 
   @include phones {
     margin-bottom: 5%;
+    min-width: rem(345px);
+    height: rem(357px);
   }
 }

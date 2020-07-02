@@ -1,9 +1,9 @@
 .benefits {
   display: flex;
-  // text-align: center;
 
   @include phones {
     flex-direction: column;
+    margin-bottom: -10%;
   }
 }
 

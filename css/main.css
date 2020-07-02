@@ -103,6 +103,7 @@ img {
   .hero {
     background-position: right bottom 74%;
     background-size: 310px 380px;
+    min-height: 0;
   }
 }
 .hero::before {
@@ -126,7 +127,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .hero::before {
-    top: 40%;
+    top: 45%;
     left: 8%;
   }
 }
@@ -151,7 +152,9 @@ img {
 @media screen and (max-width: 480px) {
   .hero::after {
     top: 33%;
-    right: 0;
+    right: 5%;
+    width: 16.2777777778rem;
+    height: 12.0555555556rem;
   }
 }
 
@@ -190,6 +193,13 @@ img {
     z-index: 2;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__main-title {
+    font-size: 1.3333333333rem;
+    line-height: 1;
+    margin-top: -5%;
+  }
+}
 
 .hero__title-desc {
   font-size: 1.1666666667rem;
@@ -204,8 +214,9 @@ img {
 }
 @media screen and (max-width: 480px) {
   .hero__title-desc {
-    padding: 0 15%;
-    margin-bottom: 4%;
+    padding: 0 5%;
+    font-size: 1rem;
+    margin-bottom: 9%;
   }
 }
 
@@ -217,6 +228,11 @@ img {
     flex: 1;
     flex-direction: column-reverse;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__columns {
+    margin-top: -5%;
   }
 }
 
@@ -257,6 +273,8 @@ img {
 @media screen and (max-width: 480px) {
   .hero__col + .hero__col img {
     margin-bottom: 5%;
+    min-width: 19.1666666667rem;
+    height: 19.8333333333rem;
   }
 }
 
@@ -266,6 +284,13 @@ img {
   justify-content: space-between;
 }
 
+.phone-number.header__phone-number {
+  transition: 0.2s;
+  opacity: 0.8;
+}
+.phone-number.header__phone-number:hover {
+  opacity: 1;
+}
 @media screen and (max-width: 768px) {
   .phone-number.header__phone-number {
     display: none;
@@ -293,6 +318,11 @@ img {
 .menu__item {
   margin-right: 4.2%;
   margin-bottom: 1%;
+  transition: 0.2s;
+  opacity: 0.8;
+}
+.menu__item:hover {
+  opacity: 1;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -456,9 +486,19 @@ img {
     margin-bottom: 13%;
   }
 }
+@media screen and (max-width: 480px) {
+  .headline {
+    margin-bottom: 0;
+  }
+}
 
 .headline__title {
   margin-bottom: 0;
+}
+@media screen and (max-width: 480px) {
+  .headline__title {
+    font-size: 1.3333333333rem;
+  }
 }
 
 .headline__subtitle {
@@ -472,7 +512,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .headline__subtitle {
-    padding: 0 2.5rem;
+    padding: 0;
     font-size: 1rem;
   }
 }
@@ -483,6 +523,7 @@ img {
 @media screen and (max-width: 480px) {
   .benefits {
     flex-direction: column;
+    margin-bottom: -10%;
   }
 }
 
@@ -566,14 +607,18 @@ img {
   font-weight: 700;
   margin-bottom: 5%;
 }
+@media screen and (max-width: 480px) {
+  .benefit__text h3 {
+    font-size: 1.2222222222rem;
+  }
+}
 
 .benefit__text p {
   font-weight: 300;
 }
-
 @media screen and (max-width: 480px) {
-  .benefit__desc {
-    padding-right: 55px;
+  .benefit__text p {
+    font-size: 1rem;
   }
 }
 
@@ -685,6 +730,11 @@ img {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews__content {
+    padding: 0;
+  }
+}
 
 .reviews__title {
   font-size: 1.6666666667rem;
@@ -695,6 +745,11 @@ img {
 @media screen and (max-width: 768px) {
   .reviews__title {
     margin-bottom: 0.6666666667rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__title {
+    font-size: 1.2222222222rem;
   }
 }
 
@@ -731,7 +786,13 @@ img {
 
 @media screen and (max-width: 768px) {
   .reviews__main-title {
-    margin-bottom: 1.3888888889rem;
+    margin-bottom: 3%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__main-title {
+    margin-bottom: 3%;
+    font-size: 1.3333333333rem;
   }
 }
 
@@ -742,7 +803,7 @@ img {
 .reviews-section:before {
   content: url("../images/rev-left-leaf.png");
   position: absolute;
-  top: 87%;
+  top: 80%;
   left: 0;
 }
 
@@ -808,6 +869,12 @@ img {
 @media screen and (max-width: 768px) {
   .order__title {
     margin-bottom: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .order__title {
+    margin-bottom: 0;
+    font-size: 1.3333333333rem;
   }
 }
 
@@ -1037,6 +1104,11 @@ input[type=number]:focus {
 
 .contacts-section {
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .contacts-section {
+    min-height: 0;
+  }
 }
 
 .contacts__map img {

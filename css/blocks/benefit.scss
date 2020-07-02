@@ -41,14 +41,16 @@
   font-size: rem(27px);
   font-weight: 700;
   margin-bottom: 5%;
+
+  @include phones {
+    font-size: rem(22px);
+  }
 }
 
 .benefit__text p {
   font-weight: 300;
-}
-
-.benefit__desc {
+  
   @include phones {
-    padding-right: 55px;
+    font-size: rem(18px);
   }
 }

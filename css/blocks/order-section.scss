@@ -29,4 +29,9 @@
   @include tablets {
     margin-bottom: 3%;
   }
+
+  @include tablets {
+    margin-bottom: 0;
+    font-size: rem(24px);
+  }
 }
