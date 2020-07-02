@@ -5,14 +5,33 @@
   &::before {
     content: url("../images/order-leaf.png");
     position: absolute;
-    bottom: 100px;
+    top: 75%;
     right: 1%;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &::after {
     content: url("../images/order-berry.png");
     position: absolute;
-    bottom: 120px;
-    left: 1%;
+    top: 76%;
+    left: 3%;
+
+    @include tablets {
+      display: none;
+    }
+  }
+}
+
+.order__title {
+  @include tablets {
+    margin-bottom: 3%;
+  }
+
+  @include tablets {
+    margin-bottom: 0;
+    font-size: rem(24px);
   }
 }

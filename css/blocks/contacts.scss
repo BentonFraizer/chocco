@@ -1,0 +1,12 @@
+.contacts-section {
+  position: relative;
+  
+  @include phones {
+    min-height: 0;
+  }
+}
+
+.contacts__map img {
+  width: 100%;
+  height: 100vh;
+}

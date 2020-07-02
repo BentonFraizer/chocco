@@ -1,0 +1,54 @@
+.social {
+  display: flex;
+}
+
+.social__item {
+  display: flex;
+  margin-right: 27%;
+}
+
+.social__item_icon-vk {
+  width: rem(20px);
+  height: rem(20px);
+  transition: 0.3s;
+  opacity: 0.3;
+  fill: #000;
+}
+
+.social__item_icon-vk:hover {
+  opacity: 1;
+}
+
+.social__item_icon-facebook {
+  width: rem(20px);
+  height: rem(20px);
+  transition: 0.3s;
+  opacity: 0.3;
+}
+
+.social__item_icon-facebook:hover {
+  opacity: 1;
+}
+
+.social__item_icon-insta {
+  width: rem(20px);
+  height: rem(20px);
+  transition: 0.3s;
+  opacity: 0.3;
+}
+
+.social__item_icon-insta:hover {
+  opacity: 1;
+}
+
+.social__item_icon-twitter {
+  width: rem(20px);
+  height: rem(20px);
+  transition: 0.3s;
+  opacity: 0.3;
+}
+
+.social__item_icon-twitter:hover {
+  opacity: 1;
+}
+

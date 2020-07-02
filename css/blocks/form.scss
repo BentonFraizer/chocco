@@ -1,24 +1,37 @@
 .form {
   display: flex;
+  
+  @include tablets {
+    flex-direction: column;
+    padding: 0 18%;
+  }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 2%;
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablets {
     margin-right: 0;
   }
 }
 
 .form__row {
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: 2%;
 }
 
 .form__block {
   flex:1;
-  margin-right: 20px;
+  margin-right: 4.5%;
 
   &:last-child{
     margin-right: 0;
@@ -27,34 +40,67 @@
 
 .form__input {
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 400;
   width: 100%;
   border: none;
-  padding: 18px 11px;
+  padding: rem(18px) rem(9px);
   border: solid 3px transparent;
 
   &:focus {
     border-color: #dee2bd;
     outline: none;
   }
+
+  @include tablets {
+    padding: rem(6px) rem(11px);
+  }
+
+}
+
+.form__title {
+  @include tablets {
+    margin-bottom: 2%;
+  }
 }
 
 .form__input--textarea {
-  height: 180px;
+  height: rem(180px);
   resize: none;
+
+  @include tablets {
+    height: rem(80px);
+  }
 }
 
 .form__controls {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 7px;
+  margin-bottom: 1%;
+
+  @include tablets {
+    margin-bottom: 3%;
+  }
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .form__controls + .form__controls {
-  margin-bottom: 40px;
+  margin-bottom: 9%;
   margin-right: 0;
+
+  @include tablets {
+    margin-bottom: 8%;
+  }
+}
+
+.form__btns {
+  @include tablets {
+    text-align: center;
+  }
 }
 
 /* Убираю стрелочки которые характерны для input type="number"*/
