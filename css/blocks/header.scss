@@ -2,6 +2,10 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @include tablets {
+    padding: 0 1rem;
+  }
 }
 
 .phone-number.header__phone-number {
@@ -17,3 +21,10 @@
   }
 }
 
+.phone-number.header__phone-number:hover {
+  opacity: 1;
+  
+  .phone-number__icon-elem {
+    fill: #000;
+  }
+}

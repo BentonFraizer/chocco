@@ -1,0 +1,9 @@
+.logo--disabled {
+  @include tablets {
+    display: none;
+  }
+
+  @include phones {
+    display: none;
+  }
+}
