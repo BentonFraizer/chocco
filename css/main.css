@@ -1347,12 +1347,13 @@ address {
   display: flex;
   position: relative;
   right: 0;
-  transition: right 0.4s;
+  transition: all 0.5s;
 }
 
 .slider__item {
   flex: 0 0 100%;
   max-width: 100%;
+  transition: all 0.5s;
 }
 
 .slider {
@@ -1505,10 +1506,12 @@ address {
 
 .sliders__arrow-left {
   margin-right: 1%;
+  width: 28px;
 }
 
 .sliders__arrow-right {
   margin-left: 1%;
+  width: 28px;
 }
 
 .slider__content-row:first-child {

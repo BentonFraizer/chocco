@@ -20,9 +20,75 @@ openMenu.addEventListener('click', function (event) {
 })
 
 
+
+//__________________Рабочий вариант. Не циклическая прокутка слайдов. Но зато работает transition______________________________
+
 const arrowRight = document.querySelector('.sliders__arrow-right');
 const arrowLeft = document.querySelector('.sliders__arrow-left');
-const itemsList = document.querySelector('.list')
+const itemsList = document.querySelector('.slider__list')
+const computed = window.getComputedStyle(itemsList);
+
+arrowRight.addEventListener("click", function(e) {
+  e.preventDefault();
+  let currentRight = parseInt(computed.right);
+
+  if (currentRight < 890) {
+    itemsList.style.right = currentRight + 891 + "px";
+  }
+});
+
+arrowLeft.addEventListener("click", function(e) {
+  e.preventDefault();
+  let currentRight = parseInt(computed.right);
+
+  if (currentRight > 0) {
+    itemsList.style.right = currentRight - 891 + "px";
+  }
+});
+//____________________________________________________________________________________________________
+
+// const arrowRight = document.querySelector('.sliders__arrow-right');
+// const arrowLeft = document.querySelector('.sliders__arrow-left');
+// const itemsList = document.querySelector('.slider__list')
+
+// arrowRight.addEventListener('click', function(event){
+//   event.preventDefault();
+//   itemsList.appendChild(itemsList.firstElementChild);
+// })
+
+// arrowLeft.addEventListener('click', function(event){
+//   event.preventDefault();
+//   itemsList.insertBefore(itemsList.lastElementChild, itemsList.firstElementChild);
+// })
+
+//_____________________________________________________________________________________________
+// аналогичный предыдущему вариант работы слайдера
+
+// const arrowRight = document.querySelector('.sliders__arrow-right');
+// const arrowLeft = document.querySelector('.sliders__arrow-left');
+// const itemsList = document.querySelector('.slider__list')
+
+// const loop = (direction, e) => {
+//   e.preventDefault();
+
+//   if (direction === "right") {
+//     itemsList.appendChild(itemsList.firstElementChild);
+//   } else {
+//     itemsList.insertBefore(itemsList.lastElementChild, itemsList.firstElementChild);
+//   }
+// };
+
+// arrowRight.addEventListener("click", (e) => {
+//   loop("right", e);
+// });
+
+// arrowLeft.addEventListener("click", (e) => {
+//   loop("left", e);
+// });
+//_____________________________________________________________________________________________
+
+
+
 
 // console.log(planks);
 
