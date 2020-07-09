@@ -29,6 +29,13 @@
   }
 }
 
+.btn--hover--darkgreen {
+  &:hover {
+    color: $colw;
+    background: #2e4e3f;
+  }
+}
+
 .btn--theme--transparent {
   color: $colb;
   background: transparent;

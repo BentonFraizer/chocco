@@ -10,11 +10,12 @@
     background: none;
   }
 
-  &:before {
+  &::before {
     content: url("../images/raspberry.png");
     position: absolute;
     top: 80.5%;
     left: 0;
+    z-index: 1;
 
     @include phones {
       display: none;

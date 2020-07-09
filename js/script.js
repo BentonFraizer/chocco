@@ -20,6 +20,10 @@ openMenu.addEventListener('click', function (event) {
 })
 
 
+const arrowRight = document.querySelector('.sliders__arrow-right');
+const arrowLeft = document.querySelector('.sliders__arrow-left');
+const itemsList = document.querySelector('.list')
+
 // console.log(planks);
 
 // planks.forEach(function(element){
