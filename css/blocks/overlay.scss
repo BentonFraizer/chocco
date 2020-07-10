@@ -1,0 +1,17 @@
+.overlay {
+  z-index: -10;
+  @include tablets {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #333537;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0.99;
+    transition: all .4s;
+    display: flex; // менять на "display: flex;" при нажатии на кнопку меню.
+  }
+}

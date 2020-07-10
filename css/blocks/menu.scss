@@ -8,11 +8,38 @@
   }
 }
 
+.menu--active {
+  @include tablets {
+    display: flex; 
+    justify-content: center;
+    z-index: 1001;
+    font-size: 5vmin;
+    margin: 14% -5% 0 0;
+    transition:all .4s;
+  }
+
+  @include phones {
+    display: flex; 
+    justify-content: center;
+    z-index: 1001;
+    font-size: 8vmin;
+    margin: 27% -5% 0 0;
+    transition:all .4s;
+  }
+}
+
 .menu__list {
+  transition:all .4s;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
 }
 
 .menu__item {
@@ -20,6 +47,11 @@
   margin-bottom: 1%;
   transition: 0.2s;
   opacity: .8;
+  
+    @include tablets {
+      margin-bottom: 7%;
+      margin-right: 0;
+    }
 
   &:hover {
     opacity: 1;
@@ -33,3 +65,5 @@
 .menu__link {
   white-space: nowrap;
 }
+
+

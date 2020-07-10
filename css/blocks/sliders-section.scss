@@ -1,0 +1,11 @@
+.sliders-section {
+  position: relative;
+  background-color:  #f8faf9; 
+
+  &::before {
+    content: url("../images/sliders-leafs-berryes.png");
+    position: absolute;
+    top: 74%;
+    right: 0;
+  }
+}
