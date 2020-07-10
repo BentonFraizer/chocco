@@ -1,8 +1,10 @@
+//______________________________Модальное окно меню во весь экран______________________________________________________________
 const openMenu = document.querySelector('#hamburger');
 const hamburger = document.querySelector('.hamburger');
 const overlay = document.querySelector('#overlay');
 const menu = document.querySelector('#menu');
 const logo = document.querySelector('.logo');
+const body = document.body;
 
 const planks = document.querySelectorAll('.hamburger__plank');
 
@@ -14,52 +16,51 @@ openMenu.addEventListener('click', function (event) {
   hamburger.classList.toggle('hamburger--menu-active');
   menu.classList.toggle('menu--active');
   logo.classList.toggle('logo--disabled');
+  body.classList.toggle('body--scroll--off');
 
   for (let i = 0; i < planks.length; i ++) 
   planks[i].classList.toggle('hamburger__plank--menu-active');
 })
 
-
-
 //__________________Рабочий вариант. Не циклическая прокутка слайдов. Но зато работает transition______________________________
+
+// const arrowRight = document.querySelector('.sliders__arrow-right');
+// const arrowLeft = document.querySelector('.sliders__arrow-left');
+// const itemsList = document.querySelector('.slider__list');
+// const computed = window.getComputedStyle(itemsList);
+
+// arrowRight.addEventListener("click", function(e) {
+//   e.preventDefault();
+//   let currentRight = parseInt(computed.right);
+
+//   if (currentRight < 890) {
+//     itemsList.style.right = currentRight + 891 + "px";
+//   }
+// });
+
+// arrowLeft.addEventListener("click", function(e) {
+//   e.preventDefault();
+//   let currentRight = parseInt(computed.right);
+
+//   if (currentRight > 0) {
+//     itemsList.style.right = currentRight - 891 + "px";
+//   }
+// });
+//_______________________________________________________________________________________________________________________________
 
 const arrowRight = document.querySelector('.sliders__arrow-right');
 const arrowLeft = document.querySelector('.sliders__arrow-left');
 const itemsList = document.querySelector('.slider__list')
-const computed = window.getComputedStyle(itemsList);
 
-arrowRight.addEventListener("click", function(e) {
-  e.preventDefault();
-  let currentRight = parseInt(computed.right);
+arrowRight.addEventListener('click', function(event){
+  event.preventDefault();
+  itemsList.appendChild(itemsList.firstElementChild);
+})
 
-  if (currentRight < 890) {
-    itemsList.style.right = currentRight + 891 + "px";
-  }
-});
-
-arrowLeft.addEventListener("click", function(e) {
-  e.preventDefault();
-  let currentRight = parseInt(computed.right);
-
-  if (currentRight > 0) {
-    itemsList.style.right = currentRight - 891 + "px";
-  }
-});
-//____________________________________________________________________________________________________
-
-// const arrowRight = document.querySelector('.sliders__arrow-right');
-// const arrowLeft = document.querySelector('.sliders__arrow-left');
-// const itemsList = document.querySelector('.slider__list')
-
-// arrowRight.addEventListener('click', function(event){
-//   event.preventDefault();
-//   itemsList.appendChild(itemsList.firstElementChild);
-// })
-
-// arrowLeft.addEventListener('click', function(event){
-//   event.preventDefault();
-//   itemsList.insertBefore(itemsList.lastElementChild, itemsList.firstElementChild);
-// })
+arrowLeft.addEventListener('click', function(event){
+  event.preventDefault();
+  itemsList.insertBefore(itemsList.lastElementChild, itemsList.firstElementChild);
+})
 
 //_____________________________________________________________________________________________
 // аналогичный предыдущему вариант работы слайдера

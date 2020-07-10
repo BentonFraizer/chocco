@@ -23,6 +23,10 @@ body {
   color: #666666;
 }
 
+.body--scroll--off {
+  overflow: hidden;
+}
+
 .wrapper {
   position: relative;
   width: 100%;

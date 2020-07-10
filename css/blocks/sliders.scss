@@ -16,6 +16,16 @@
   flex: 0 0 100%;
   max-width: 100%;
   transition: all .5s;
+
+  @include tablets {
+    max-width: 87vmin;
+  }
+
+  @include phones {
+    flex: 0 0 88%;
+    max-width: 84vmin;
+    margin-right: 2%;
+  }
 }
 
 .slider {
@@ -96,6 +106,16 @@
   color: #666;
   display: flex;
   margin-bottom: 9%;
+
+  &:first-child {
+    @include tablets {
+      font-size: 2.9vmin;
+    }
+
+    @include phones {
+      font-size: 4vmin;
+    }
+  }
 
   @include tablets {
     margin-bottom: 7%;
