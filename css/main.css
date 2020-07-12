@@ -1607,3 +1607,57 @@ address {
   flex-direction: row;
   align-items: center;
 }
+
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__title {
+  color: #000;
+  font-size: 1.1666666667rem;
+  font-weight: 700;
+  margin-bottom: 5%;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+}
+
+.team__main-title {
+  margin-bottom: 5%;
+}
+
+.team__member {
+  height: 16rem;
+  margin-bottom: 8%;
+}
+
+.team__item {
+  flex: 1;
+  margin-right: 2%;
+  text-align: center;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__content-block span {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.team--version--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team--version--mobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team--version--desktop {
+    display: none;
+  }
+}

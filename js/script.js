@@ -1,3 +1,4 @@
+$(document).ready(() => {
 //______________________________Модальное окно меню во весь экран______________________________________________________________
 const openMenu = document.querySelector('#hamburger');
 const hamburger = document.querySelector('.hamburger');
@@ -122,3 +123,9 @@ arrowLeft.addEventListener('click', function(event){
 // })
 
 // let elements = document.querySelectorAll('.some-class'); 
+
+
+
+
+
+}); // закрываем функцию $(document).ready()

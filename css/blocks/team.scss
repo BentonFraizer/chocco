@@ -1,0 +1,68 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__title {
+  color: #000;
+  font-size: rem(21px);
+  font-weight: 700;
+  margin-bottom: 5%;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+}
+
+.team__main-title {
+  margin-bottom: 5%;
+}
+
+.team__member {
+  height: rem(288px);
+  margin-bottom: 8%;
+}
+
+.team__item {
+  flex: 1;
+  margin-right: 2%;
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team__content-block span {
+  color: #000;
+  font-size: rem(18px);
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team--version--mobile {
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
+}
+
+.team--version--desktop {
+  @include tablets {
+    display: none;
+  }
+}
