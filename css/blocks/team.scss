@@ -11,15 +11,54 @@
   display: inline-flex;
   align-items: center;
   padding: 0;
+  position: relative;
+
+
+  &::after {
+    content: url('../../images/arrow-show-info.png');
+    position: absolute;
+    transform: rotate(0deg);
+    transition: all .3s;
+    top: -4%;
+    left: 102%;
+  }
+
+  @include tablets {
+    margin-bottom: 2%;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus      {
+    outline: none;
+  }
 }
 
 .team__main-title {
   margin-bottom: 5%;
+  
+  @include phones {
+    font-size: 10vmin;
+    margin-bottom: 2%;
+  }
 }
 
 .team__member {
-  height: rem(288px);
+  max-height: rem(288px);
   margin-bottom: 8%;
+
+  @include tablets {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+}
+
+.team__content-block p {
+  margin: 0 auto;
+  max-width: rem(250px);
 }
 
 .team__item {
@@ -30,6 +69,11 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include tablets {
+    margin-right: 0;
+    justify-content: center;
+  }
 }
 
 .team__content-block span {
@@ -38,26 +82,27 @@
   font-weight: 400;
 }
 
+.team--version--desktop {
+  position: absolute;
+  top: 100%;
+}
 
+.team__content {
+  overflow: hidden;
+  height: 0; 
+  transition: height .3s;
 
-
-
-
-
-
-
-
-
-
-
-
-
+  @include tablets {
+    margin-bottom: 1%;
+  }
+}
 
 .team--version--mobile {
   display: none;
 
   @include tablets {
     display: flex;
+    flex-direction: column;
   }
 }
 
@@ -65,4 +110,13 @@
   @include tablets {
     display: none;
   }
+}
+
+.team__item:first-child {
+  display: none;
+}
+
+.team__item+.active .team__title::after {
+  transform: translate(0, 6px) rotate(180deg);
+  transition: all .3s;
 }

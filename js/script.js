@@ -47,7 +47,7 @@ openMenu.addEventListener('click', function (event) {
 //     itemsList.style.right = currentRight - 891 + "px";
 //   }
 // });
-//_______________________________________________________________________________________________________________________________
+//___________Реализация работы слайдера секции sliders_________________________________________________________________________________________________
 
 const arrowRight = document.querySelector('.sliders__arrow-right');
 const arrowLeft = document.querySelector('.sliders__arrow-left');
@@ -90,39 +90,57 @@ arrowLeft.addEventListener('click', function(event){
 //_____________________________________________________________________________________________
 
 
+//__________Реализация вертикального аккордеона (меню-гармошки) секции team______________
+
+const openItem = item => {
+  const container = item.closest(".team__item");
+  const contentBlock = container.find(".team__content");
+  const textBlock = contentBlock.find(".team__content-block");
+  const reqHeight = textBlock.height();
+
+  container.addClass("active");
+  contentBlock.height(reqHeight);
+}
+
+const closeEveryItem = container => {
+  const items = container.find('.team__content');
+  const itemContainer = container.find(".team__item");
+
+  itemContainer.removeClass("active");
+  items.height(0);
+}
+
+$('.team__title').click(e => {
+  const $this = $(e.currentTarget);
+  const container = $this.closest('.team');
+  const elemContainer = $this.closest(".team__item");
+
+  if (elemContainer.hasClass("active")) {
+    closeEveryItem(container);
+  } else {
+    closeEveryItem(container);
+    openItem($this);
+  }
+});
 
 
-// console.log(planks);
-
-// planks.forEach(function(element){
-//   element.addEventListener('click, toggleMenu');
-// })
-
-// function toggleMenu (){
-//   overlay.classList.toggle('overlay');
-//   hamburger.classList.toggle('hamburger--menu-active');
-//   menu.classList.toggle('menu--active');
-// }
-
-// openMenu.addEventListener('click', toggleMenu);
-
-
-// planks.forEach(function(element){
-//   element.addEventListener('click' , toggleMenu);
-// })
 
 
 
-// classList.toggle('hamburger__plank--menu-active');
 
-//___________________________Обработать все елементы бургера_________________________________
-// openMenu.addEventListener('click', function (event) {
-//   event.preventDefault();
-//   for (let i = 0; i < planks.length; i ++) 
-//   planks[i].classList.toggle('hamburger__plank--menu-active');
-// })
 
-// let elements = document.querySelectorAll('.some-class'); 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
