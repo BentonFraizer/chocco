@@ -150,11 +150,54 @@ $('.interactive-avatar').on('click', function(e) {
     const showSlide3 = slide3.addClass('active').siblings().removeClass('active');
   }
 });
+//_____________________________________________________________________________________________
+
+//__________Реализация работы секции order и в частности корректной/валидной работы формы заказа_____________________________________
+
+const myForm = document.querySelector('#myForm');
+const submitButton = document.querySelector('#submitButton');
 
 
 
+$('#myForm').submit(function (e) {
+  e.preventDefault();
+
+  $.fancybox.open({
+    src: "#modal",
+    type: "inline"
+  });
+  
+
+  const dataToSend = {
+    name: myForm.elements.name.value,
+    phone: myForm.elements.phone.value,
+    comment: myForm.elements.comment.value,
+    to: myForm.elements.to.value
+  };
+
+  // const name = myForm.elements.name.value;
+
+  // let formData = new FormData();
+  // formData.set('name', {"name": myForm.elements.name.value});
+  
+  // console.log(formData);
 
 
+  const xhr = new XMLHttpRequest();
+  xhr.responseType = 'json';
+  xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+  xhr.send(JSON.stringify(dataToSend));
+  console.log(typeof(JSON.stringify(dataToSend)));
+  // xhr.send(JSON.stringify(formData));
+  xhr.addEventListener ('load', () => {
+    // console.log(xhr.response);
+  })
+})
+
+$('.js-close-modal').on('click', function (e) {
+  e.preventDefault();
+  $.fancybox.close();
+});
 
 
 

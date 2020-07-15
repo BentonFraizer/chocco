@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
     <title>CHOCCO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
@@ -545,41 +546,41 @@
         <section class="section order-section section--font--color--green">
           <div class="container">
             <h2 class="section__title order__title">Закажите доставку</h2>
-            <form class="form">
+            <form id="myForm" class="form" autocomplete="off">
               <input type="hidden" name="to" value="myaddress@mail.ru">
               <div class="form__col">
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__title">Имя</div>
-                    <input type="text" class="form__input" required>
+                    <input type="text" class="form__input" name="name"> <!-- required -->
                   </label>
                   <label class="form__block">
                     <div class="form__title">Телефон</div>
-                    <input type="tel" class="form__input" required>
+                    <input type="tel" class="form__input" name="phone"> <!-- required -->
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__title">Улица</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="street">
                   </label>
                 </div>
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__title">Дом</div>
-                    <input type="number" class="form__input">
+                    <input type="number" class="form__input" name="home">
                   </label>
                   <label class="form__block">
                     <div class="form__title">Корпус</div>
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" name="part">
                   </label>
                   <label class="form__block">
                     <div class="form__title">Квартира</div>
-                    <input type="number" class="form__input">
+                    <input type="number" class="form__input" name="apartment">
                   </label>
                   <label class="form__block">
                     <div class="form__title">Этаж</div>
-                    <input type="number" class="form__input">
+                    <input type="number" class="form__input" name="floor">
                   </label>
                 </div>
               </div>
@@ -587,7 +588,7 @@
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__title">Комментарий</div>
-                    <textarea class="form__input form__input--textarea" required></textarea>
+                    <textarea class="form__input form__input--textarea" name="comment"></textarea> <!-- required -->
                   </label>
                 </div>
                 <div class="form__controls">
@@ -610,11 +611,21 @@
                   </label>
                 </div>
                 <div class="form__btns">
-                  <input type="submit" value="Заказать" class="btn btn--theme--green">
+                  <input type="submit" id="submitButton" value="Заказать" class="btn btn--theme--green">
                   <input type="reset" value="Очистить" class="btn btn--theme--transparent">
                 </div>
               </div>
             </form>
+          </div>
+          <div id="modal" class="modal">
+            <div class="modal__container">
+              <div class="modal__content">
+                Сообщение отправлено
+              </div>
+              <div class="modal__button-container">
+                <a href="#" class="btn js-close-modal btn--theme--green">Закрыть</a>
+              </div> 
+            </div>
           </div>
         </section>
         <section class="section contacts-section">
@@ -667,7 +678,7 @@
             </div>
           </footer>
         </section>
-        <div id="overlay" ></div>
+        <div id="overlay"></div>
       </div>
     </div>
     <nav class="fixed-menu">
@@ -684,6 +695,7 @@
       </ul>
     </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

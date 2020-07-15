@@ -1784,3 +1784,36 @@ address {
   transform: translate(0, 6px) rotate(180deg);
   transition: all 0.3s;
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  display: none;
+}
+.modal.fancybox-content {
+  display: flex !important;
+  position: absolute;
+}
+
+button.fancybox-button.fancybox-close-small {
+  display: none;
+}
+
+.modal__container {
+  margin: auto;
+  background: #fff;
+  padding: 1.9444444444rem 3.3333333333rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 10%;
+  color: #000;
+}
