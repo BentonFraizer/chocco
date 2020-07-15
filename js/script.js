@@ -92,7 +92,7 @@ arrowLeft.addEventListener('click', function(event){
 
 //__________Реализация вертикального аккордеона (меню-гармошки) секции team______________
 
-const openItem = item => {
+  const openItem = item => {
   const container = item.closest(".team__item");
   const contentBlock = container.find(".team__content");
   const textBlock = contentBlock.find(".team__content-block");
@@ -102,7 +102,7 @@ const openItem = item => {
   contentBlock.height(reqHeight);
 }
 
-const closeEveryItem = container => {
+  const closeEveryItem = container => {
   const items = container.find('.team__content');
   const itemContainer = container.find(".team__item");
 
@@ -122,6 +122,62 @@ $('.team__title').click(e => {
     openItem($this);
   }
 });
+//_____________________________________________________________________________________________
+
+
+//__________Реализация слайдшоу секции reviws__________________________________________________
+
+$('.interactive-avatar').on('click', function(e) {
+  e.preventDefault();
+  const thisAvatar = $(e.currentTarget)
+  const activeAvatar = thisAvatar.addClass('active').siblings().removeClass('active');
+  const ava1 = $('.interactive-avatar:nth-child(1)');
+  const ava2 = $('.interactive-avatar:nth-child(2)');
+  const ava3 = $('.interactive-avatar:nth-child(3)');
+
+  const ava1HasActive = ava1.hasClass('active');
+  const ava2HasActive = ava2.hasClass('active');
+  const ava3HasActive = ava3.hasClass('active');
+  
+  if (ava1HasActive == true) {
+    const slide1 = $('.reviews__content-item:nth-child(1)');
+    const showSlide1 = slide1.addClass('active').siblings().removeClass('active');
+  } else if (ava2HasActive == true) {
+    const slide2 = $('.reviews__content-item:nth-child(2)');
+    const showSlide2 = slide2.addClass('active').siblings().removeClass('active');
+  } else if (ava3HasActive == true) {
+    const slide3 = $('.reviews__content-item:nth-child(3)');
+    const showSlide3 = slide3.addClass('active').siblings().removeClass('active');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

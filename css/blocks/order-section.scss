@@ -5,7 +5,7 @@
   &::before {
     content: url("../images/order-leaf.png");
     position: absolute;
-    top: 75%;
+    top: 82%;
     right: 1%;
 
     @include tablets {
@@ -16,7 +16,7 @@
   &::after {
     content: url("../images/order-berry.png");
     position: absolute;
-    top: 76%;
+    top: 84%;
     left: 3%;
 
     @include tablets {
