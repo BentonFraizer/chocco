@@ -56,6 +56,9 @@
     padding: rem(6px) rem(11px);
   }
 
+  &.input-error {
+    border-color: rgb(255, 40, 40);
+  }
 }
 
 .form__title {

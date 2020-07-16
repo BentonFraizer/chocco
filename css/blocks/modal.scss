@@ -12,6 +12,10 @@
     display: flex !important;
     position: absolute;
   }
+
+  &.error-modal .modal__content {
+    color: red;
+  }
 }
 
 button.fancybox-button.fancybox-close-small {
@@ -29,6 +33,6 @@ button.fancybox-button.fancybox-close-small {
 }
 
 .modal__content {
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   color: #000;
 }

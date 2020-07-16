@@ -547,16 +547,16 @@
           <div class="container">
             <h2 class="section__title order__title">Закажите доставку</h2>
             <form id="myForm" class="form" autocomplete="off">
-              <input type="hidden" name="to" value="myaddress@mail.ru">
+              <input type="hidden" name="to" value="somewhere@mail.com">
               <div class="form__col">
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__title">Имя</div>
-                    <input type="text" class="form__input" name="name"> <!-- required -->
+                    <input type="text" class="form__input" name="name">
                   </label>
                   <label class="form__block">
                     <div class="form__title">Телефон</div>
-                    <input type="tel" class="form__input" name="phone"> <!-- required -->
+                    <input type="number" class="form__input" name="phone">
                   </label>
                 </div>
                 <div class="form__row">
@@ -580,7 +580,7 @@
                   </label>
                   <label class="form__block">
                     <div class="form__title">Этаж</div>
-                    <input type="number" class="form__input" name="floor">
+                    <input type="text" class="form__input" name="floor">
                   </label>
                 </div>
               </div>
@@ -588,7 +588,7 @@
                 <div class="form__row">
                   <label class="form__block">
                     <div class="form__title">Комментарий</div>
-                    <textarea class="form__input form__input--textarea" name="comment"></textarea> <!-- required -->
+                    <textarea class="form__input form__input--textarea" name="comment"></textarea> 
                   </label>
                 </div>
                 <div class="form__controls">

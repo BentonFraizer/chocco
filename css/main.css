@@ -1047,6 +1047,9 @@ img {
     padding: 0.3333333333rem 0.6111111111rem;
   }
 }
+.form__input.input-error {
+  border-color: #ff2828;
+}
 
 @media screen and (max-width: 768px) {
   .form__title {
@@ -1799,6 +1802,9 @@ address {
   display: flex !important;
   position: absolute;
 }
+.modal.error-modal .modal__content {
+  color: red;
+}
 
 button.fancybox-button.fancybox-close-small {
   display: none;
@@ -1814,6 +1820,6 @@ button.fancybox-button.fancybox-close-small {
 }
 
 .modal__content {
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   color: #000;
 }
