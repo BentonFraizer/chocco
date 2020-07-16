@@ -549,6 +549,7 @@ img {
 }
 .section--font--color--green .section__title {
   color: inherit;
+  margin-bottom: 4%;
 }
 
 .section__title {
