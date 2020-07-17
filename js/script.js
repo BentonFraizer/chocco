@@ -195,6 +195,12 @@ $('#myForm').submit(function (e) {
       },
       success: data => {
         content.text(data.message);
+        
+        if (data.message === "Письмо успешно отправлено") {
+          $('#myForm').find("[name='name'], [name='phone'], [name='comment'], [name='street'], [name='home'], [name='part'], [name='apartment'], [name='floor']" ).val('');
+          $('#myForm').find('input:checkbox:checked').prop("checked", false);
+        };
+
         $.fancybox.open({
           src: ".modal",
           type: "inline"
@@ -212,6 +218,7 @@ $('#myForm').submit(function (e) {
       }
     });
   }
+
   $('.js-close-modal').on('click', function (e) {
     e.preventDefault();
 

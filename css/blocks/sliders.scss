@@ -146,6 +146,10 @@
       margin-left: 27%;
     }
   }
+
+  & p {
+    min-height: rem(110px);
+  }
 }
 
 .slider__price {

@@ -3,7 +3,7 @@ footer {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  position: absolute;
+  // position: absolute;
   width: 100%;
   min-height: rem(93px);
   left: 0;
@@ -41,4 +41,12 @@ address {
     margin-right: 13%;
     margin-top: 1%;
   }
+}
+
+.footer-wrapper {
+  position: absolute;
+  width: 100%;
+  min-height: rem(93px);
+  bottom: 0;
+  background-color: $colw;
 }

@@ -1,12 +1,12 @@
 .reviews__display {
   margin-bottom: 22px;
   background: #f8faf9; // вернуть этот цвет #f8faf9
-  padding: rem(50px) rem(45px) rem(34px);
+  padding: rem(50px) rem(45px) rem(34px); 
   position: relative;
   overflow: hidden;
 
   @include tablets {
-    padding: rem(57px) rem(20px) rem(21px);
+    padding: rem(25px) rem(20px) rem(10px); // былло (rem(57px) rem(20px) rem(21px))
   }
 
   &::before {
@@ -110,6 +110,7 @@
   
   @include phones {
     font-size: rem(22px);
+    min-height: rem(60px);
   }
 }
 
@@ -121,7 +122,12 @@
   @include tablets {
     padding-right: 0;
     margin-bottom: 2.5%;
+    min-height: rem(90px);
   }
+
+  @include phones {
+    min-height: rem(170px);
+  }   
 }
 
 .reviews__autor {
