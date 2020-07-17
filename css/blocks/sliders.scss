@@ -53,7 +53,7 @@
 }
 
 .slider__content-column:last-child {
-  max-width: rem(350px);
+  max-width: rem(358px);
   flex-direction: column; 
 
   @include tablets {
@@ -145,6 +145,10 @@
     @include phones {
       margin-left: 27%;
     }
+  }
+
+  & p {
+    min-height: rem(110px);
   }
 }
 

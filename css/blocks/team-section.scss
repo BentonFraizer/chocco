@@ -1,0 +1,19 @@
+.team-section {
+  position: relative;
+  background-color:  $colw;
+
+  &::before {
+    content: url("../images/berry-team-section.webp");
+    position: absolute;
+    top: 94%;
+    left: 2%;
+
+    @include tablets {
+      top: 90%;
+    }
+
+    @include phones {
+      top: 89%;
+    }
+  }
+}

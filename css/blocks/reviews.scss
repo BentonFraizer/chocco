@@ -1,12 +1,12 @@
 .reviews__display {
   margin-bottom: 22px;
-  background: #f8faf9;
-  padding: rem(50px) rem(45px) rem(34px);
+  background: #f8faf9; // вернуть этот цвет #f8faf9
+  padding: rem(50px) rem(45px) rem(34px); 
   position: relative;
   overflow: hidden;
 
   @include tablets {
-    padding: rem(57px) rem(20px) rem(21px);
+    padding: rem(25px) rem(20px) rem(10px); // былло (rem(57px) rem(20px) rem(21px))
   }
 
   &::before {
@@ -38,10 +38,10 @@
 
 .reviews__display-inner {
   display: flex;
+  align-items: center;
   
   @include tablets {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 }
@@ -81,18 +81,36 @@
   }
 }
 
+.reviews__content-list {
+  margin-left: 0;
+  padding: rem(8px) 0;
+  position: relative;
+  min-height: rem(345px);
+
+  @include tablets {
+    margin-left: 0;
+  }
+
+  @include phones {
+    padding: 0;
+  }
+}
+
 .reviews__title {
   font-size: rem(30px);
   font-weight: 700;
   color: $colb;
   margin-bottom: rem(19px);
+  padding-right: rem(80px);
 
   @include tablets {
+    padding-right: 0;
     margin-bottom: rem(12px);
   }
   
   @include phones {
     font-size: rem(22px);
+    min-height: rem(60px);
   }
 }
 
@@ -104,7 +122,12 @@
   @include tablets {
     padding-right: 0;
     margin-bottom: 2.5%;
+    min-height: rem(90px);
   }
+
+  @include phones {
+    min-height: rem(170px);
+  }   
 }
 
 .reviews__autor {
@@ -119,11 +142,21 @@
 }
 
 .reviews__content-item {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  // transition: all .3s;
+  opacity: 0;
 }
 
-.reviews__content-item--active {
-  display: flex;
+.reviews__content-item.active {
+  position: static;
+  opacity: 1;
+  transition: all 1s;
+  pointer-events: unset;
 }
 
 .reviews__main-title {
