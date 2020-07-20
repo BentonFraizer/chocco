@@ -35,7 +35,7 @@ $(document).ready(() => {
     const content = container.find('.products-menu__content');
 
     items.removeClass('active').fadeIn(700, "linear");
-    
+
     content.width(0);
   }
 
@@ -74,7 +74,7 @@ $(document).ready(() => {
   $('.products-menu__close').on('click', e => {
     e.preventDefault();
 
-    closeEveryItemInContainer($('.products-menu').find('.products-menu__item').css({'display': 'flex', 'transition': 'all .7s'}).removeClass('active'));
+    closeEveryItemInContainer($('.products-menu').find('.products-menu__item').css('display', 'flex').removeClass('active'));
   })
 
 });
