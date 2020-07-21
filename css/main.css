@@ -35,8 +35,14 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -92,7 +98,7 @@ img {
 .hero {
   background: url("../images/pattern.png") right bottom no-repeat;
   background-color: #61C4D9;
-  height: 100vh;
+  height: 100%;
   min-height: 650px;
   color: #fff;
   padding: 1.3333333333rem 0 2.5rem;
@@ -537,7 +543,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
@@ -1199,7 +1205,7 @@ input[type=number]:focus {
 }
 
 .fixed-menu__item--active .fixed-menu__link {
-  border-color: #344acc;
+  border-color: white;
 }
 
 .fixed-menu__link {
@@ -1216,11 +1222,19 @@ input[type=number]:focus {
   height: 0.3333333333rem;
   width: 0.3333333333rem;
   border-radius: 50%;
-  background: #344acc;
+  background: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.fixed-menu--color-black .fixed-menu__link::before {
+  background: black;
+}
+
+.fixed-menu--color-black.fixed-menu__item--active .fixed-menu__link {
+  border-color: black;
 }
 
 .contacts-section {

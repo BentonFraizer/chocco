@@ -17,7 +17,7 @@
 
 .fixed-menu__item--active {
   .fixed-menu__link {
-    border-color: rgb(52, 74, 204);
+    border-color: rgb(255, 255, 255);
   }
 }
 
@@ -35,10 +35,24 @@
     height: rem(6px);
     width: rem(6px);
     border-radius: 50%;
-    background: rgb(52, 74, 204);
+    background: rgb(255, 255, 255);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+.fixed-menu--color-black {
+  .fixed-menu__link {
+    &::before {
+      background: rgb(0, 0, 0);
+    }
+  }
+}
+
+.fixed-menu--color-black.fixed-menu__item--active {
+  .fixed-menu__link {
+    border-color: rgb(0, 0, 0);
   }
 }

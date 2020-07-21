@@ -11,7 +11,7 @@
   <body>
     <div class="wrapper">
       <div class="maincontent">
-        <section class="hero">
+        <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
           <div class="container hero__container">
             <header class="header">
               <a href="/" class="logo">
@@ -19,13 +19,13 @@
               </a>
               <nav id="menu" class="menu">
                 <ul class="menu__list">
-                  <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Батончики</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-                  <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                  <li class="menu__item"><a href="#" data-scroll-to="benefits" class="menu__link">О нас</a></li>
+                  <li class="menu__item"><a href="#" data-scroll-to="sliders" class="menu__link">Батончики</a></li>
+                  <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
+                  <li class="menu__item"><a href="#" data-scroll-to="products-menu" class="menu__link">Меню</a></li>
+                  <li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
+                  <li class="menu__item"><a href="#" data-scroll-to="!дописать!" class="menu__link">Как мы работаем</a></li>
+                  <li class="menu__item"><a href="#" data-scroll-to="contacts" class="menu__link">Контакты</a></li>
                 </ul>
               </nav>
               <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -47,7 +47,7 @@
                 <div class="hero__title-section">
                   <h1 class="hero__main-title">Натуральные шоколадные батончики</h1>
                   <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-                  <a href="#" class="btn btn--theme--white">Заказать</a>
+                  <a href="#" data-scroll-to="order" class="btn btn--theme--white">Заказать</a>
                 </div>
               </div>
               <div class="hero__col">
@@ -84,7 +84,7 @@
             </div>
           </div>
         </section>
-        <section class="section benefits-section">
+        <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
           <div class="container">
             <div class="headline">
               <h2 class="section__title headline__title">Почему chocco?</h2>
@@ -145,7 +145,7 @@
             </ul>
           </div>
         </section>
-        <section class="section sliders-section">
+        <section data-sidemenu-theme="black" data-section-id="sliders" class="section sliders-section">
           <div class="container slider-conteainer">
             <a href="#" class="sliders__arrow-left">
               <img src="./images/arrow-scroll-left.png" alt="arrow-left" class="arrow-icon">
@@ -238,7 +238,7 @@
                         <div class="slider__content-subrow">
                           <div class="slider__price">140<span>₽</span></div>
                           <div class="slider__btn">
-                            <a href="#" class="btn btn--theme--green btn--hover--darkgreen">Заказать</a>
+                            <a href="#" data-scroll-to="order" class="btn btn--theme--green btn--hover--darkgreen">Заказать</a>
                           </div>
                         </div>
                       </div>
@@ -343,7 +343,7 @@
             </a>
           </div>
         </section>
-        <section class="section team-section">
+        <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
           <div class="container team-container">
             <h2 class="section__title team__main-title">Команда</h2>
             <ul class="team team--version--desktop">
@@ -475,7 +475,7 @@
             </ul>
           </div>
         </section>
-        <section class="section products-menu-section">
+        <section data-sidemenu-theme="white" data-section-id="products-menu" class="section products-menu-section">
           <h1 class="section-title products-menu-section__title">Меню</h1>
           <ul class="products-menu">
             <li class="products-menu__item">
@@ -531,7 +531,7 @@
             </li>
           </ul>
         </section>
-        <section class="section reviews-section">
+        <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
           <div class="container">
             <h2 class="section__title reviews__main-title">Отзывы</h2>
             <div class="reviews">
@@ -611,7 +611,7 @@
             </div>
           </div>
         </section>
-        <section class="section order-section section--font--color--green">
+        <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font--color--green">
           <div class="container">
             <h2 class="section__title order__title">Закажите доставку</h2>
             <form id="myForm" class="form" autocomplete="off">
@@ -696,7 +696,7 @@
             </div>
           </div>
         </section>
-        <section class="section contacts-section">
+        <section data-sidemenu-theme="black" data-section-id="contacts" class="section contacts-section">
           <div class="contacts__map">
             <img src="./images/map.jpg" alt="map">
           </div>
@@ -755,20 +755,23 @@
     </div>
     <nav class="fixed-menu">
       <ul class="fixed-menu__list">
-        <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-        <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__item fixed-menu__item--active"><a data-scroll-to="hero" href="" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__item"><a data-scroll-to="benefits" href="" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__item"><a data-scroll-to="sliders" href="" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__item"><a data-scroll-to="team" href="" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__item"><a data-scroll-to="products-menu" href="" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__item"><a data-scroll-to="reviews" href="" class="fixed-menu__link"></a></li>
+        <!-- <li class="fixed-menu__item"><a data-scroll-to="" href="" class="fixed-menu__link"></a></li> -->
+        <li class="fixed-menu__item"><a data-scroll-to="order" href="" class="fixed-menu__link"></a></li>
+        <li class="fixed-menu__item"><a data-scroll-to="contacts" href="" class="fixed-menu__link"></a></li>
       </ul>
     </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/menu-hor-accord.js"></script>
+    <script src="./js/ops.js"></script>
   </body>
 </html>
