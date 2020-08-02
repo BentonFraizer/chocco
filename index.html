@@ -24,7 +24,7 @@
                   <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
                   <li class="menu__item"><a href="#" data-scroll-to="products-menu" class="menu__link">Меню</a></li>
                   <li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
-                  <li class="menu__item"><a href="#" data-scroll-to="!дописать!" class="menu__link">Как мы работаем</a></li>
+                  <li class="menu__item"><a href="#" data-scroll-to="yt-player" class="menu__link">Как мы работаем</a></li>
                   <li class="menu__item"><a href="#" data-scroll-to="contacts" class="menu__link">Контакты</a></li>
                 </ul>
               </nav>
@@ -611,7 +611,37 @@
             </div>
           </div>
         </section>
-        <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font--color--green">
+        <section data-sidemenu-theme="black" data-section-id="yt-player" class="section player-section">
+          <div class="container">
+            <h2 class="section__title yt-player__title">Как мы работаем</h2>
+            <div class="player-section__container">
+              <div class="player">
+                <div class="player__wrapper">
+                  <div id="yt-player" class="player__elem"></div>
+                  <div class="player__splash"></div>
+                </div>
+                <div class="player__controls">
+                  <button class="player__start">
+                    <svg class="player__start-img">
+                      <use xlink:href="./icons/sprite.svg#play-video"></use>
+                    </svg>
+                    <svg class="player__paused-img">
+                      <use xlink:href="./icons/sprite.svg#paused-video"></use>
+                    </svg>
+                  </button>
+                  <div class="player__playback">
+                    <button class="player__playback-button"></button>
+                  </div>
+                  <div class="player__duration">
+                    <span class="player__duration-completed">0:00</span> :
+                    <span class="player__duration-estimate">0:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section data-sidemenu-theme="white" data-section-id="order" class="section order-section berries-leafs section--font--color--green">
           <div class="container">
             <h2 class="section__title order__title">Закажите доставку</h2>
             <form id="myForm" class="form" autocomplete="off">
@@ -697,8 +727,8 @@
           </div>
         </section>
         <section data-sidemenu-theme="black" data-section-id="contacts" class="section contacts-section">
-          <div class="contacts__map">
-            <img src="./images/map.jpg" alt="map">
+          <div id="map" class="contacts__map">
+            <!-- <img src="./images/map.jpg" alt="map"> -->
           </div>
           <div class="footer-wrapper">
             <div class="container">
@@ -750,7 +780,7 @@
             </div>
           </div>
         </section>
-        <div id="overlay"></div>
+        <!-- <div id="overlay"></div> -->
       </div>
     </div>
     <nav class="fixed-menu">
@@ -761,7 +791,7 @@
         <li class="fixed-menu__item"><a data-scroll-to="team" href="" class="fixed-menu__link"></a></li>
         <li class="fixed-menu__item"><a data-scroll-to="products-menu" href="" class="fixed-menu__link"></a></li>
         <li class="fixed-menu__item"><a data-scroll-to="reviews" href="" class="fixed-menu__link"></a></li>
-        <!-- <li class="fixed-menu__item"><a data-scroll-to="" href="" class="fixed-menu__link"></a></li> -->
+        <li class="fixed-menu__item"><a data-scroll-to="yt-player" href="" class="fixed-menu__link"></a></li>
         <li class="fixed-menu__item"><a data-scroll-to="order" href="" class="fixed-menu__link"></a></li>
         <li class="fixed-menu__item"><a data-scroll-to="contacts" href="" class="fixed-menu__link"></a></li>
       </ul>
@@ -770,8 +800,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
     <script src="./js/script.js"></script>
     <script src="./js/menu-hor-accord.js"></script>
     <script src="./js/ops.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="/js/map.js"></script>
   </body>
 </html>

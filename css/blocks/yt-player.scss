@@ -1,0 +1,140 @@
+.player__controls {
+  display: flex;
+  align-items: center;
+}
+
+.player__wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#yt-player {
+  max-width: rem(660px);
+  width: 100%;
+  height: rem(406px);
+  
+  @include tablets {
+    max-width: rem(595px);
+  }
+
+  @include phones {
+    max-width: rem(397px);
+  }
+}
+
+.yt-player__title {
+  margin-bottom: rem(31px);
+    @include tablets {
+      font-size: rem(48px);
+    }
+
+    @include phones {
+      font-size: rem(27px);
+    }
+}
+
+.player {
+  position: relative;
+  display: block;
+  max-width: rem(660px);
+  margin: 0 auto;
+  max-height: 405px;
+  height: 100%;
+
+  &.active .player__splash {
+    display: none;
+  }
+
+  &.paused {
+    & .player__start-img {
+      display: none;
+    }
+
+    .player__start {
+      padding: rem(5px) rem(18px) 0;
+    }
+  }
+  
+  &:not(.paused) {
+    & .player__paused-img {
+      display: none;
+    }
+  }
+}
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../../images/splash__scrin.jpg) center center/cover no-repeat;
+  cursor: pointer;
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: rem(35px);
+  background-color: #404040;;
+}
+
+.player__start {
+  padding: rem(4px) rem(20px) 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.player__start-img {
+  width: rem(16px);
+  height: rem(22px);
+  fill: #626262;
+}
+
+.player__paused-img {
+  width: rem(20px);
+  height: rem(26px);
+  fill: #626262;
+}
+
+.player__playback {
+  height: 16px;
+  width: rem(444px);
+  position: relative;
+
+  &:before {
+    content: '';
+    height: rem(4px);
+    position: absolute;
+    top: 42%;
+    left: 0;
+    right: 0;
+    background-color: #626262;
+    display: block;
+  }
+}
+
+.player__playback-button {
+  background-color: #626262;
+  border-radius: 30px;
+  border: none;
+  width: rem(12px);
+  height: rem(12px);
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.player__duration {
+  margin: 0 auto;
+}

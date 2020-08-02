@@ -3,6 +3,9 @@
   height: 100%;
   min-height: rem(650px);
   display: flex;
+    @include phones {
+      min-height: 0;
+    }
   flex-direction: column;
   justify-content: center;
 }

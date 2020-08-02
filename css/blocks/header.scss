@@ -9,22 +9,15 @@
 }
 
 .phone-number.header__phone-number {
-  transition: 0.2s;
-  opacity: .8;
+  transition: .3s;
+  border-bottom: 1px solid transparent;
 
   &:hover {
-    opacity: 1;
+    border-bottom: 1px solid white;
+    transition: .3s;
   }
   
   @include tablets {
     display: none;
-  }
-}
-
-.phone-number.header__phone-number:hover {
-  opacity: 1;
-  
-  .phone-number__icon-elem {
-    fill: #000;
   }
 }

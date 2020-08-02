@@ -73,6 +73,9 @@ const viewportScroller = () => {
   const nextSection = activeSection.next(); // определение следующей секции по DOM-дереву
   const prevSection = activeSection.prev(); // определение предыдущей секции по DOM-дереву
 
+  // console.log(activeSection);
+  // console.log('activeSection.prev()' + ' ' + activeSection.prev());
+
   return {
     next() {
       if (nextSection.length) {
@@ -145,10 +148,10 @@ if (isMobile) {
 
       if (direction === "up") scrollDirection = "next";
       if (direction === "down") scrollDirection = "prev";
-      // if (direction === "left") scrollDirection = "prev";
-      // if (direction === "right") scrollDirection = "next";
 
-      scroller[scrollDirection]();
+      if (scroller[scrollDirection]) { //проверка: если возьмем не существующее св-во объекта то вернется undefined что приводится к false и условие не срабатывает
+        scroller[scrollDirection]()
+      }
     },
   });
 }
