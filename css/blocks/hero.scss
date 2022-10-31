@@ -1,8 +1,12 @@
 .hero {
   background: url("../images/pattern.png") right bottom no-repeat;
   background-color: #61C4D9;
-  height: 100vh;
+  // height: 100vh;
+  height: 100%;
   min-height: 650px;
+    @include tablets{
+      min-height: rem(613px);
+    }
   color: $colw;
   padding: rem(24px) 0 rem(45px); 
   position: relative;
@@ -45,8 +49,10 @@
     content: "";
     background-image:url("../images/berries-and-leafs.png");
     position: absolute;
-    top: 77%;
-    right: 0;
+    top: 72%;
+    right: 2%;
+    width: rem(460px);
+    height: rem(342px);
 
     @include tablets {
       width: rem(340px);

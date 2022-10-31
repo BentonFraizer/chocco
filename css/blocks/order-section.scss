@@ -1,11 +1,12 @@
 .order-section {
   background: url("../images/bgd-order.jpg") no-repeat;
   background-size: cover;
+  position: relative;
 
   &::before {
     content: url("../images/order-leaf.png");
     position: absolute;
-    top: 82%;
+    top: 74%;
     right: 1%;
 
     @include tablets {

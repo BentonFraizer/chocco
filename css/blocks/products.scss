@@ -1,0 +1,106 @@
+.products-menu {
+  position: relative;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  justify-content: flex-end;
+}
+
+.products-menu__item {
+  display: flex;
+}
+
+.products-menu__title {
+  position: relative;
+  width: rem(100px);
+  transition: all .7s;
+
+  @include phones {
+    width: rem(90px);
+  }
+}
+
+.products-menu__content {
+  background: rgba(51, 53, 55, .93);
+  width: 0;
+  overflow: hidden;
+  position: relative;
+  transition: width .7s;
+}
+
+.products-menu__container {
+  padding: rem(25px) rem(125px) rem(50px) rem(30px);
+
+  @include tablets {
+    padding: rem(65px) rem(65px) rem(30px) rem(30px);
+  }
+
+  @include phones {
+    padding: rem(65px) rem(25px) rem(30px) rem(20px);
+  }
+}
+
+.products-menu__content-text {
+  font-size: rem(16px);
+}
+
+.products-menu__image {
+  height: 100vh;
+  width: auto;
+}
+
+.products-menu-section__title {
+  position: absolute;
+  font-size: rem(48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  top: 9%;
+  left: 5%;
+  
+  @include tablets {
+    top: 10%;
+    left: 6%;
+  }
+
+  @include phones {
+    left: 2%;
+    font-size: 7vmin;
+  }
+}
+
+.products-menu__text {
+  transform: rotate(-90deg) translateX(365px) translateY(-254px);
+  line-height: 1;
+  width: 600px;
+  font-size: 48px;
+  font-weight: 700;
+
+  @include tablets {
+    transform: rotate(-90deg) translateX(353px) translateY(-254px);
+  }
+
+  @include phones {
+    font-size: rem(36px);
+    transform: rotate(-90deg) translateX(345px) translateY(-261px);
+  }
+}
+
+.products-menu__close {
+  padding: 0;
+  margin: 0;
+}
+
+.products-menu__close-icon {
+  width: rem(18px);
+  height: rem(18px);
+  position: absolute;
+  top: rem(25px);
+  right: rem(30px);
+  transition: .3s;
+
+  &:hover {
+    fill-opacity: .5;
+  }
+}

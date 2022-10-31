@@ -45,8 +45,9 @@
 .menu__item {
   margin-right: 4.2%;
   margin-bottom: 1%;
-  transition: 0.2s;
-  opacity: .8;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: .3s;
   
     @include tablets {
       margin-bottom: 7%;
@@ -54,7 +55,8 @@
     }
 
   &:hover {
-    opacity: 1;
+    border-bottom: 1px solid white;
+    transition: .3s;
   }
 
   &:last-child {
